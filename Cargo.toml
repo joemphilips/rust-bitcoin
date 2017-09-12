@@ -1,11 +1,13 @@
-
 [package]
 name = "bitcoin"
 version = "0.10.0"
-authors = ["Andrew Poelstra <apoelstra@wpsoftware.net>"]
+authors = [
+  "Andrew Poelstra <apoelstra@wpsoftware.net>",
+  "Joe Miyamoto <joemphilips@gmail.com>"
+]
 license = "CC0-1.0"
-homepage = "https://github.com/apoelstra/rust-bitcoin/"
-repository = "https://github.com/apoelstra/rust-bitcoin/"
+homepage = "https://github.com/joemphilips/rust-bitcoin/"
+repository = "https://github.com/joemphilips/rust-bitcoin/"
 documentation = "https://www.wpsoftware.net/rustdoc/bitcoin/"
 description = "General purpose library for using and interoperating with Bitcoin and other cryptocurrencies."
 keywords = [ "crypto", "bitcoin" ]
