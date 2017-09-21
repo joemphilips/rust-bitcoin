@@ -36,7 +36,7 @@ pub trait Listener {
     /// Return the network this `Listener` is operating on
     fn network(&self) -> Network;
     /// Main listen loop
-    pub fn start(&self) -> Result<(Receiver<message::SocketResponse>, Socket), util::Error> {
+    fn start(&self) -> Result<(Receiver<message::SocketResponse>, Socket), util::Error> {
         // Open socket
         let mut ret_sock = Socket::new(self.network());
         if let Err(e) = ret_sock.connect(self.peer(), self.port()) {
